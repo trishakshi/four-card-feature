@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  max-width: 1140px;
+  text-align: center;
+  margin: 80px 20px;
+}
+
+.headline {
+  font-weight: 200;
+  color: var(--grayish-blue);
+  font-size: 27px;
+}
+
+.headline > span {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  display: block;
+}
+
+.sub_headline {
+  color: var(--grayish-blue);
+  margin: 20px 0 60px;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 350px;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+}
+
+.supervisor {
+  border-top: 3.5px solid var(--cyan);
+}
+
+.team_builder {
+  border-top: 3.5px solid var(--red);
+}
+
+.karma {
+  border-top: 3.5px solid var(--orange);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+
+.calculator {
+  border-top: 3.5px solid var(--blue);
+}
+
+.title {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  text-align: left;
+}
+
+.description {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  text-align: left;
+}
+
+.card > img {
+  margin-top: 30px;
+  position: relative;
+  left: 40%;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    margin: 60px auto;
+  }
+
+  .header {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .sub_headline {
+    margin-top: 10px;
+  }
+
+  .card_group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .karma {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  }
+
+  .supervisor {
+    position: relative;
+    top: 50%;
+  }
+
+  .calculator {
+    position: relative;
+    top: 50%;
+  }
+}
